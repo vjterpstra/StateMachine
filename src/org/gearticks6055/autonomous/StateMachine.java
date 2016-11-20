@@ -96,6 +96,11 @@ public abstract class StateMachine implements AutonomousComponent{
 		}
 		this.currentState = input;
 	}
+	
+	@Override
+	public void setup() {
+		this.setup(1);
+	}
 
 	@Override
 	public int run() {

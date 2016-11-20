@@ -28,6 +28,11 @@ public abstract class AutonomousComponentAbstractImpl implements
 		// TODO Auto-generated method stub
 
 	}
+	
+	@Override
+	public void setup() {
+		this.setup(1);
+	}
 
 	@Override
 	public int run() {

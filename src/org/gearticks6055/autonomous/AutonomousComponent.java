@@ -24,6 +24,11 @@ public interface AutonomousComponent {
 	public void setup(int inputPort);
 	
 	/**
+	 * Sets up using default port 1
+	 */
+	public void setup();
+	
+	/**
 	 * To be called in each loop cycle.
 	 * Returns the 'transition' or  id of the 'outputPort' through which this AutonomousComponent ends.
 	 * This allows for choice between different transitions/routes to next AutonomousComponents.

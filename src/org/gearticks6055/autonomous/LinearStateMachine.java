@@ -22,4 +22,6 @@ public class LinearStateMachine extends StateMachine {
 		this.addConnection(originComponent, 1, this.outputPorts.get(1), 1);
 	}
 
+	
+
 }
