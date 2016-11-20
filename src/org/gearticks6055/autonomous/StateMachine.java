@@ -10,9 +10,23 @@ import java.util.logging.Logger;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
 
+/**
+ * A StateMachine itself implements an AutonomousComponent, i.e. this supports hierarchical state-machines.
+ * Internally, a StateMachine contains InputPorts, AutonomousComponents, StateMachineConnections and OutputPorts  
+ * (where Input- and OutputPorts are AutonomousComponents)
+ * StateMachineConnections connect between an output-port of one AutonomousComponent to the input-port of another AutonomousComponent.
+ * 
+ * A StateMachine uses the specialized Input- and OutputPort AutonomousComponents to implement the ports, 
+ * but in general for a custom AutonomousComponent this is not necessary.
+ * 
+ * The use of Input- and OutputPort AutonomousComponents allows the StateMachine to have an internal network of AutonomousComponents.
+ * 
+ * @author vterpstra
+ *
+ */
 public abstract class StateMachine implements AutonomousComponent{
-	private final int numInputPorts;
-	private final int numOutputPorts;
+//	private final int numInputPorts;
+//	private final int numOutputPorts;
 	protected AutonomousComponent currentState = null;
 	
 	protected Map<Integer, InputPort> inputPorts = new HashMap<>();
@@ -24,8 +38,8 @@ public abstract class StateMachine implements AutonomousComponent{
 	
 	public StateMachine(int numInputPorts, int numOutputPorts) {
 		super();
-		this.numInputPorts = numInputPorts;
-		this.numOutputPorts = numOutputPorts;
+//		this.numInputPorts = numInputPorts;
+//		this.numOutputPorts = numOutputPorts;
 		
 		assert numInputPorts >= 1;
 		assert numOutputPorts >= 1;
