@@ -1,8 +1,5 @@
 package org.gearticks6055.autonomous.sample;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.gearticks6055.autonomous.AutonomousComponent;
 import org.gearticks6055.autonomous.components.GiroDrive;
 import org.gearticks6055.autonomous.components.Wait;
@@ -12,7 +9,7 @@ import org.gearticks6055.autonomous.components.Wait;
  * @author vterpstra
  *
  */
-public class SampleOpMode2 extends OpModeTest {
+public class SampleOpModeSwitch extends OpModeTest {
 	
 	private enum Stage{
 		WAIT1 (new Wait(2000, "Wait for 2 sec")),
@@ -42,7 +39,7 @@ public class SampleOpMode2 extends OpModeTest {
 	
 	public void setup(){
 		this.stage = Stage.WAIT1;
-		this.stage.getComponent().setup();
+		this.stage.getComponent().setup(1);
 	}
 	
 	public void loop(){
@@ -86,8 +83,14 @@ public class SampleOpMode2 extends OpModeTest {
 		this.stage = Stage.values()[this.stage.ordinal() + 1];
 		//setup next stage
 		if (this.stage.getComponent() != null){
-			this.stage.getComponent().setup();
+			this.stage.getComponent().setup(1);
 		}
+	}
+	
+	public static void main(String[] args) {
+		SampleOpModeSwitch opMode = new SampleOpModeSwitch();
+		
+		runOpMode(opMode, 10);
 	}
 
 }

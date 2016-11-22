@@ -23,10 +23,10 @@ public interface AutonomousComponent {
 	 */
 	public void setup(int inputPort);
 	
-	/**
-	 * Sets up using default port 1
-	 */
-	public void setup();
+//	/**
+//	 * Sets up using default port 1
+//	 */
+//	public void setup();
 	
 	/**
 	 * To be called in each loop cycle.
@@ -42,6 +42,6 @@ public interface AutonomousComponent {
 	 */
 	public void tearDown();
 	
-	public Logger getLogger();
+//	public Logger getLogger();
 
 }

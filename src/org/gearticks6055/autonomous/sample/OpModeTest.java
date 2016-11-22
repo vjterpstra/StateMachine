@@ -1,6 +1,8 @@
 package org.gearticks6055.autonomous.sample;
 
-public class OpModeTest {
+import java.util.concurrent.TimeUnit;
+
+public abstract class OpModeTest {
 	
 	public void initialize(){
 		
@@ -16,6 +18,28 @@ public class OpModeTest {
 	
 	public void tearDown(){
 		
+	}
+	
+	public static void runOpMode(OpModeTest opMode, int maxRunTimeSeconds) {
+		
+		System.out.println("Start");
+		opMode.initialize();
+		opMode.setup();
+		long maxRunTime = maxRunTimeSeconds * 1000;// in milliseconds
+		long endTime = System.currentTimeMillis() + maxRunTime;
+		while (true){
+			opMode.loop();
+			if (System.currentTimeMillis() > endTime){
+				break;
+			}
+			try {
+			    TimeUnit.MILLISECONDS.sleep(100);
+			} catch (InterruptedException e) {
+			    //Handle exception
+			}
+		}
+		opMode.tearDown();
+		System.out.println("Done");
 	}
 
 }

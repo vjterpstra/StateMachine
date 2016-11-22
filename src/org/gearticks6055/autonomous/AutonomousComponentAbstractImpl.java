@@ -29,7 +29,10 @@ public abstract class AutonomousComponentAbstractImpl implements
 
 	}
 	
-	@Override
+	/**
+	 * Convenience method.
+	 * Calls this.setup(1);
+	 */
 	public void setup() {
 		this.setup(1);
 	}
@@ -51,7 +54,6 @@ public abstract class AutonomousComponentAbstractImpl implements
 		return this.id;
 	}
 	
-	@Override
 	public Logger getLogger(){
 		return Logger.getLogger(this.getClass().getSimpleName());
 	}

@@ -24,7 +24,7 @@ import com.google.common.collect.Table;
  * @author vterpstra
  *
  */
-public abstract class StateMachine implements AutonomousComponent{
+public class StateMachine implements AutonomousComponent{
 //	private final int numInputPorts;
 //	private final int numOutputPorts;
 	protected AutonomousComponent currentState = null;
@@ -97,7 +97,6 @@ public abstract class StateMachine implements AutonomousComponent{
 		this.currentState = input;
 	}
 	
-	@Override
 	public void setup() {
 		this.setup(1);
 	}
@@ -125,6 +124,7 @@ public abstract class StateMachine implements AutonomousComponent{
 				//Find next component
 				StateMachineConnection connection = this.outputConnections.get(this.currentState, transition);
 				if (connection != null){
+					this.currentState.tearDown();
 //					System.out.println("Transition from " + this.currentState + " to " + connection.getDestinationComponent() + " port " + connection.getDestinationPortNumber());
 					this.getLogger().info("Transition from " + this.currentState + " to " + connection.getDestinationComponent() + " port " + connection.getDestinationPortNumber());
 					this.currentState = connection.getDestinationComponent();
@@ -147,7 +147,14 @@ public abstract class StateMachine implements AutonomousComponent{
 		this.currentState = null;
 	}
 	
-	@Override
+	public InputPort getInputPort(int portNumber){
+		return this.inputPorts.get(portNumber);
+	}
+	
+	public OutputPort getOutputPort(int portNumber){
+		return this.outputPorts.get(portNumber);
+	}
+	
 	public Logger getLogger(){
 		return Logger.getLogger(this.getClass().getSimpleName());
 	}
