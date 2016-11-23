@@ -7,13 +7,12 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.gearticks6055.autonomous.AutonomousComponent;
-import org.gearticks6055.autonomous.LinearStateMachine;
 import org.gearticks6055.autonomous.components.GiroDrive;
 import org.gearticks6055.autonomous.components.Wait;
+import org.gearticks6055.autonomous.statemachine.LinearStateMachine;
 
 /**
  * This is a sample of a 'traditional' switch-based staging when using AutonomousComponents for some stages
- * @author vterpstra
  *
  */
 public class SampleOpModeLinear extends OpModeTest {

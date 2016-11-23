@@ -1,8 +1,8 @@
 package org.gearticks6055.autonomous.components;
 
-import org.gearticks6055.autonomous.AutonomousComponentAbstractImpl;
+import org.gearticks6055.autonomous.AutonomousComponentBase;
 
-public class Wait extends AutonomousComponentAbstractImpl {
+public class Wait extends AutonomousComponentBase {
 	private final int waitTime;//msec
 	private long endTime;
 	

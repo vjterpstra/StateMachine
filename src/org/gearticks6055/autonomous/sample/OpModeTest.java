@@ -2,6 +2,10 @@ package org.gearticks6055.autonomous.sample;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * A base class to 'emulate' a OpmOde outside of the FTC library
+ *
+ */
 public abstract class OpModeTest {
 	
 	public void initialize(){

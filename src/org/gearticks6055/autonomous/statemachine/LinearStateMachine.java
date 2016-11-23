@@ -1,10 +1,12 @@
-package org.gearticks6055.autonomous;
+package org.gearticks6055.autonomous.statemachine;
 
 import java.util.List;
 
+import org.gearticks6055.autonomous.AutonomousComponent;
+
 /**
- * Assumes all internal components form a linear/sequential chain
- *
+ * Assumes all internal components form a linear/sequential chain.
+ * Simplifies initialization of a sate-machine
  */
 public class LinearStateMachine extends StateMachine {
 	//private final List<AutonomousComponent> components = new ArrayList<>();

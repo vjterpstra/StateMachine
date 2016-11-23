@@ -1,8 +1,8 @@
 package org.gearticks6055.autonomous.components;
 
-import org.gearticks6055.autonomous.AutonomousComponentAbstractImpl;
+import org.gearticks6055.autonomous.AutonomousComponentBase;
 
-public class GiroDrive extends AutonomousComponentAbstractImpl {
+public class GiroDrive extends AutonomousComponentBase {
 	private final int driveTime;//msec
 	private final double heading;
 	private long endTime;

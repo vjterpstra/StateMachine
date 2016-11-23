@@ -1,4 +1,4 @@
-package org.gearticks6055.autonomous;
+package org.gearticks6055.autonomous.statemachine;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
+
+import org.gearticks6055.autonomous.AutonomousComponent;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
@@ -20,8 +22,6 @@ import com.google.common.collect.Table;
  * but in general for a custom AutonomousComponent this is not necessary.
  * 
  * The use of Input- and OutputPort AutonomousComponents allows the StateMachine to have an internal network of AutonomousComponents.
- * 
- * @author vterpstra
  *
  */
 public class StateMachine implements AutonomousComponent{

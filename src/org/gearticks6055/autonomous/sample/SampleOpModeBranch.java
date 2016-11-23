@@ -7,17 +7,16 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.gearticks6055.autonomous.AutonomousComponent;
-import org.gearticks6055.autonomous.InputPort;
-import org.gearticks6055.autonomous.LinearStateMachine;
-import org.gearticks6055.autonomous.OutputPort;
-import org.gearticks6055.autonomous.StateMachine;
 import org.gearticks6055.autonomous.components.GiroDrive;
 import org.gearticks6055.autonomous.components.Wait;
+import org.gearticks6055.autonomous.statemachine.InputPort;
+import org.gearticks6055.autonomous.statemachine.LinearStateMachine;
+import org.gearticks6055.autonomous.statemachine.OutputPort;
+import org.gearticks6055.autonomous.statemachine.StateMachine;
 
 /**
  * This is a sample of a state-machine with branching.
  * Need to use StateMachine with connections
- * @author vterpstra
  *
  */
 public class SampleOpModeBranch extends OpModeTest {

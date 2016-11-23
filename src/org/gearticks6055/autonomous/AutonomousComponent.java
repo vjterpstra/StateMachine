@@ -1,11 +1,11 @@
 package org.gearticks6055.autonomous;
 
-import java.util.logging.Logger;
-
 /**
  * Autonomous component has input and output 'ports', with numbers starting at 1.
+ * Interface is as simple as possible to allow for easy conversion.
  * 
- * @author vterpstra
+ * AutonomousComponent can be used in regular switch-like state-machine, but also by an automated state-machine. 
+ * See samples.
  *
  */
 public interface AutonomousComponent {
@@ -22,11 +22,6 @@ public interface AutonomousComponent {
 	 * @param inputPort - The port through which this component/state is entered
 	 */
 	public void setup(int inputPort);
-	
-//	/**
-//	 * Sets up using default port 1
-//	 */
-//	public void setup();
 	
 	/**
 	 * To be called in each loop cycle.

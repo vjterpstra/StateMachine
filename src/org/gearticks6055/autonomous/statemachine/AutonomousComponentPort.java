@@ -1,5 +1,11 @@
-package org.gearticks6055.autonomous;
+package org.gearticks6055.autonomous.statemachine;
 
+import org.gearticks6055.autonomous.AutonomousComponentAbstractImpl;
+
+/**
+ * Represents a in- or output port for use in a StateMachine
+ *
+ */
 public class AutonomousComponentPort extends AutonomousComponentAbstractImpl {
 	private final int portNumber;
 	private final boolean isInput;

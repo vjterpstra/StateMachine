@@ -1,5 +1,13 @@
-package org.gearticks6055.autonomous;
+package org.gearticks6055.autonomous.statemachine;
 
+import org.gearticks6055.autonomous.AutonomousComponent;
+
+/**
+ * Connection between AutonomousComponents within a StateMachine.
+ * Specifies individual ports. By convention, port numbering starts at 1 and increments.
+ * 'Port number' 0 is reserved for 'not ready'/'no transition'.
+ *
+ */
 public class StateMachineConnection {
 	private final AutonomousComponent originComponent;
 	private final int originPortNumber;

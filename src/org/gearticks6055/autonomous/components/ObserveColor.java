@@ -1,14 +1,13 @@
 package org.gearticks6055.autonomous.components;
 
-import org.gearticks6055.autonomous.AutonomousComponentAbstractImpl;
+import org.gearticks6055.autonomous.AutonomousComponentBase;
 
 /**
  * Sample of an AutonomousComponent that makes a decision and has 2 output ports
  * Transition 1 for red, transition 2 for blue
- * @author vterpstra
  *
  */
-public class ObserveColor extends AutonomousComponentAbstractImpl {
+public class ObserveColor extends AutonomousComponentBase {
 	
 	public ObserveColor(String id) {
 		super(id);

@@ -6,7 +6,6 @@ import org.gearticks6055.autonomous.components.Wait;
 
 /**
  * This is a sample of a 'traditional' switch-based staging when using AutonomousComponents for some stages
- * @author vterpstra
  *
  */
 public class SampleOpModeSwitch extends OpModeTest {
