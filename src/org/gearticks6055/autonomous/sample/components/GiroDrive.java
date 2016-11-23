@@ -1,6 +1,6 @@
-package org.gearticks6055.autonomous.components;
+package org.gearticks6055.autonomous.sample.components;
 
-import org.gearticks6055.autonomous.AutonomousComponentBase;
+import org.gearticks6055.autonomous.component.AutonomousComponentBase;
 
 public class GiroDrive extends AutonomousComponentBase {
 	private final int driveTime;//msec

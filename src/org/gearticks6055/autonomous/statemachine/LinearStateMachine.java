@@ -2,7 +2,7 @@ package org.gearticks6055.autonomous.statemachine;
 
 import java.util.List;
 
-import org.gearticks6055.autonomous.AutonomousComponent;
+import org.gearticks6055.autonomous.component.AutonomousComponent;
 
 /**
  * Assumes all internal components form a linear/sequential chain.

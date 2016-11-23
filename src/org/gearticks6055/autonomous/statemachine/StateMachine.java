@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
-import org.gearticks6055.autonomous.AutonomousComponent;
+import org.gearticks6055.autonomous.component.AutonomousComponent;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;

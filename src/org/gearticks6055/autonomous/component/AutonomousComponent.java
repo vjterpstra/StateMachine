@@ -1,4 +1,4 @@
-package org.gearticks6055.autonomous;
+package org.gearticks6055.autonomous.component;
 
 /**
  * Autonomous component has input and output 'ports', with numbers starting at 1.

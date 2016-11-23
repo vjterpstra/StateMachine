@@ -1,4 +1,4 @@
-package org.gearticks6055.autonomous;
+package org.gearticks6055.autonomous.component;
 
 import java.util.logging.Logger;
 

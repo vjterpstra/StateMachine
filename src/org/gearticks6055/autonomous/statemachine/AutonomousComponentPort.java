@@ -1,6 +1,6 @@
 package org.gearticks6055.autonomous.statemachine;
 
-import org.gearticks6055.autonomous.AutonomousComponentAbstractImpl;
+import org.gearticks6055.autonomous.component.AutonomousComponentAbstractImpl;
 
 /**
  * Represents a in- or output port for use in a StateMachine

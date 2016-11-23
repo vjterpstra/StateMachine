@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import org.gearticks6055.autonomous.AutonomousComponent;
-import org.gearticks6055.autonomous.components.GiroDrive;
-import org.gearticks6055.autonomous.components.Wait;
+import org.gearticks6055.autonomous.component.AutonomousComponent;
+import org.gearticks6055.autonomous.sample.components.GiroDrive;
+import org.gearticks6055.autonomous.sample.components.Wait;
 import org.gearticks6055.autonomous.statemachine.InputPort;
 import org.gearticks6055.autonomous.statemachine.LinearStateMachine;
 import org.gearticks6055.autonomous.statemachine.OutputPort;

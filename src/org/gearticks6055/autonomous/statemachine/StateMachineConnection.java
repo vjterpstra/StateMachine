@@ -1,6 +1,6 @@
 package org.gearticks6055.autonomous.statemachine;
 
-import org.gearticks6055.autonomous.AutonomousComponent;
+import org.gearticks6055.autonomous.component.AutonomousComponent;
 
 /**
  * Connection between AutonomousComponents within a StateMachine.

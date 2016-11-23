@@ -1,8 +1,8 @@
 package org.gearticks6055.autonomous.sample;
 
-import org.gearticks6055.autonomous.AutonomousComponent;
-import org.gearticks6055.autonomous.components.GiroDrive;
-import org.gearticks6055.autonomous.components.Wait;
+import org.gearticks6055.autonomous.component.AutonomousComponent;
+import org.gearticks6055.autonomous.sample.components.GiroDrive;
+import org.gearticks6055.autonomous.sample.components.Wait;
 
 /**
  * This is a sample of a 'traditional' switch-based staging when using AutonomousComponents for some stages
